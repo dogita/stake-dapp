@@ -1,0 +1,66 @@
+  
+@import url('https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: "Teachers", sans-serif;
+                                                
+  background-color: black;
+  
+ 
+}
+
+@keyframes shadowAni {
+  0% {
+    box-shadow: 0 0 5px #FF00EB;
+  }
+
+  50% {
+    box-shadow: 0 0 25px #FF00EB;
+  }
+
+  100% {
+    box-shadow: 0 0 5px #FF00EB
+  }
+}
+
+.cardShadow {
+  animation: shadowAni 3000ms infinite;
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #00ACD2;
+  z-index: 9; 
+}
+
+
+
+.gradient-border {
+  border: 2px solid;
+  border-image: linear-gradient(to left, #00ACD2, white) 1;
+  border-radius: 3rem;
+}
+
+.gradient-text {
+  /* background-image: linear-gradient(to left, #ffffff,  #FF00EB); */
+  background-color: white;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
